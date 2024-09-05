@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background: rgb(50, 129, 30);
+            grid-area:header;
+
+        }
+     
+
+#uno{
+   
+   grid-area:s1;
+   border-radius:33px;
+    
+  
+ }
+ 
+ #dos{
+    background: rgb(214, 214, 140);
+    grid-area: s2;
+    border-radius:33px;
+    margin-left: 20px;
+    text-align:center;
+    padding-top: 20px;
+    
+
+
+ 
+ }
+ #text{
+  width: 700px;
+  height: 700px;
+ }
+ #dos p{
+    font-size:2.0rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+   
+
+ }
+ #dos .sombra-movil:hover{
+  transform: translateY(-6px);
+  transition-duration: 0.3s;
+  animation: 1.5s mover-caja infinite;
+}
+#dos .sombra-movil:before{
+  content: '';
+  background: radial-gradient(ellipse, 
+    rgba(0,0,0,0.35) 0%, 
+    rgba(0,0,0,0) 80%);
+  width: 90%;
+  height: 20px;
+  top: 100%;
+  left: 5%;
+  position: absolute;
+  opacity: 0;
+}
+#dos .sombra-movil:hover:before{
+  opacity: 1;
+  transform: translateY(6px);
+  transition-duration: 0.3s;
+  animation: 1.5s mover-sombra infinite;
+}
+
+@keyframes mover-caja{ 
+  50%{ 
+    transform: translateY(-10px);
+  } 
+}
+@keyframes mover-sombra{
+  50%{
+    opacity: 1;
+    transform: translateY(10px) scale(0.9)
+  }
+}
+
+ #tres{
+    background: rgb(124, 93, 73);
+    grid-area: s3;
+    border-radius:33px;
+    
+    text-align:center;
+    padding-top: 20px;
+    
+    
+ 
+ }
+ #tres p{
+    
+    font-size:2.0rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+
+ }
+
+ #tres .sombra-movil:hover{
+  transform: translateY(-6px);
+  transition-duration: 0.3s;
+  animation: 1.5s mover-caja infinite;
+}
+#tres .sombra-movil:before{
+  content: '';
+  background: radial-gradient(ellipse, 
+    rgba(0,0,0,0.35) 0%, 
+    rgba(0,0,0,0) 80%);
+  width: 90%;
+  height: 20px;
+  top: 100%;
+  left: 5%;
+  position: absolute;
+  opacity: 0;
+}
+#tres .sombra-movil:hover:before{
+  opacity: 1;
+  transform: translateY(6px);
+  transition-duration: 0.3s;
+  animation: 1.5s mover-sombra infinite;
+}
+
+@keyframes mover-caja{ 
+  50%{ 
+    transform: translateY(-10px);
+  } 
+}
+@keyframes mover-sombra{
+  50%{
+    opacity: 1;
+    transform: translateY(10px) scale(0.9)
+  }
+}
+
+ #cuatro{
+    background:rgb(197, 155, 106);
+    grid-area: s4;
+    border-radius:33px;
+    padding-left: 20px;
+    text-align:center;
+    padding-top: 20px;
+    padding-right: 20px;
+    
+ 
+ }
+ #cuatro p{
+    
+    font-size:2.0rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+ }
+ #cuatro .sombra-movil:hover{
+  transform: translateY(-6px);
+  transition-duration: 0.3s;
+  animation: 1.5s mover-caja infinite;
+}
+#cuatro .sombra-movil:before{
+  content: '';
+  background: radial-gradient(ellipse, 
+    rgba(0,0,0,0.35) 0%, 
+    rgba(0,0,0,0) 80%);
+  width: 90%;
+  height: 20px;
+  top: 100%;
+  left: 5%;
+  position: absolute;
+  opacity: 0;
+}
+#cuatro .sombra-movil:hover:before{
+  opacity: 1;
+  transform: translateY(6px);
+  transition-duration: 0.3s;
+  animation: 1.5s mover-sombra infinite;
+}
+
+@keyframes mover-caja{ 
+  50%{ 
+    transform: translateY(-10px);
+  } 
+}
+@keyframes mover-sombra{
+  50%{
+    opacity: 1;
+    transform: translateY(10px) scale(0.9)
+  }
+}
+
+ #cinco{
+    background-color: rgb(130, 143, 86);
+    grid-area: s5;
+    border-radius:33px;
+    
+
+}
+*{
+    box-sizing:border-box;
+}
+img{
+    width:100%;
+
+}
+.row{
+    display:flex;
+    padding:10px;
+    flex.wrap:wrap;
+}
+    .column{
+        flex:25% ;
+    padding:5px;
+}
+.column img{
+        flex:25% 
+    margin-top:5px;
+}
+@media (max-width:800px){
+    .column{
+        flex:50%;
+        
+    }
+}
+@media (max-width:600px){
+    .column{
+        flex:100%;
+        
+    }
+}
+ #seis{
+    background-color: rgb(164, 196, 106);
+    grid-area: s6;
+    border-radius:33px;
+    padding-left: 20px;
+    text-align:center;
+    padding-top: 20px;
+    padding-right: 20px;
+    
+ }
+ #seis p{
+    
+    font-size:1.6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+
+ }
+ #seis .sombra-movil:hover{
+  transform: translateY(-6px);
+  transition-duration: 0.3s;
+  animation: 1.5s mover-caja infinite;
+}
+#seis .sombra-movil:before{
+  content: '';
+  background: radial-gradient(ellipse, 
+    rgba(0,0,0,0.35) 0%, 
+    rgba(0,0,0,0) 80%);
+  width: 90%;
+  height: 20px;
+  top: 100%;
+  left: 5%;
+  position: absolute;
+  opacity: 0;
+}
+#seis .sombra-movil:hover:before{
+  opacity: 1;
+  transform: translateY(6px);
+  transition-duration: 0.3s;
+  animation: 1.5s mover-sombra infinite;
+}
+
+@keyframes mover-caja{ 
+  50%{ 
+    transform: translateY(-10px);
+  } 
+}
+@keyframes mover-sombra{
+  50%{
+    opacity: 1;
+    transform: translateY(10px) scale(0.9)
+  }
+}
+ #siete{
+    background-color: rgb(123, 146, 94);
+    grid-area: s7;
+    border-radius:33px;
+    padding-left: 20px;
+    text-align:center;
+    padding-top: 80px;
+    
+    
+ }
+ #text1{
+  width: 500px;
+  height: 600px;
+ }
+ #siete p{
+ 
+    font-size:2.0rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+
+ }
+ #ocho{
+    background-color: rgb(153, 223, 125);
+    grid-area: s8;
+    border-radius:33px;
+    
+    
+}
+#f1{
+    border-radius: 10px;
+    
+}
+ 
+ #f2{
+    border-radius: 10px;
+   
+ }
+
+ #f3{
+    border-radius: 10px;
+    
+ }
+ 
+ #f4{
+    border-radius: 10px;
+    
+ }
+
+
+
+#foto1{
+   
+    position: relative;
+    left: 200px;
+    top:275px;
+}
+* {
+   box-sizing: border-box;
+   
+}
+.caja1{
+    display:flex;
+    justify-content:center;
+    gap:9em;
+    flex-wrap:wrap;
+    float:left;
+    margin:55px;
+    transition: 0.5s;
+    object-fit: cover;
+    background-color: #BDCC4F;
+    border-radius:1rem;
+    box-shadow:#6ECC4F  0px 13px 20px 0px, #6ECC4F 8px -8px 10px 0px;
+    
+
+}
+.caja1:hover{
+    transform:scale(1.2) ;
+}
+.ff1{
+    display:flex;
+    flex:300px;
+    flex-direction:column;
+    border :1px solid white;
+    border-radius:1rem;
+    padding:2rem;
+}
+.ff1 img {
+    order:-1;
+    align-self:center;
+
+}
+#foto2{
+    position: relative;
+    
+    left: 450px;
+    top:100px;
+    
+}
+.ff2{
+    display:flex;
+    flex:300px;
+    flex-direction:column;
+    border :1px solid white;
+    border-radius:1rem;
+    padding:2rem;
+}
+.ff2 img {
+    order:-1;
+    align-self:center;
+
+}
+.caja2{
+    display:flex;
+    justify-content:center;
+    gap:9em;
+    flex-wrap:wrap;
+    float:left;
+    margin:58px;
+    transition: 0.5s;
+    object-fit: cover;
+    background-color: #BDCC4F;
+    border-radius:1rem;
+    box-shadow:#6ECC4F  0px 13px 20px 0px, #6ECC4F 8px -8px 10px 0px;
+
+}
+.caja2:hover{
+    transform:scale(1.2) ;
+}
+#foto3{
+    position: relative;
+    
+    left: 710px;
+    top:-100px;
+}
+.ff3{
+    display:flex;
+    flex: 300px;
+    flex-direction:column;
+    border :1px solid white;
+    border-radius:1rem;
+    padding:2rem;
+}
+.ff3 img {
+    order:-1;
+    align-self:center;
+
+}
+.caja3{
+    display:flex;
+    justify-content:center;
+    gap:4em;
+    flex-wrap:wrap;
+    float:left;
+    margin: 64px;
+    transition: 0.5s;
+    object-fit: cover;
+    background-color: #BDCC4F;
+    border-radius:1rem;
+    box-shadow:#6ECC4F  0px 13px 20px 0px, #6ECC4F 8px -8px 10px 0px;
+
+}
+.caja3:hover{
+    transform:scale(1.2) ;
+}
+#foto4{
+    position: relative;
+    left: 990px;
+    top:60px;
+}
+.ff4{
+    display:flex;
+    flex: 300px;
+    flex-direction:column;
+    border :1px solid white;
+    border-radius:1rem;
+    padding:2rem;
+}
+.ff4 img {
+    order:-1;
+    align-self:center;
+
+}
+.caja4{
+    display:flex;
+    justify-content:center;
+    gap:9em;
+    flex-wrap:wrap;
+    float:left;
+    margin:54px;
+    transition: 0.5s;
+    object-fit: cover;
+    background-color: #BDCC4F;
+    border-radius:1rem;
+    box-shadow:#6ECC4F  0px 13px 20px 0px, #6ECC4F 8px -8px 10px 0px;
+}
+.caja4:hover{
+    transform:scale(1.2) ;
+}
+#fotos1{
+  background-image: url(h1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    animation-name: zzz;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    width: 50cm;
+    height: 50cm;
+}
+@keyframes zzz{
+20%{
+    background-image: url(h2.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+40%{
+    background-image: url(h3.jpg);
+    background-size: 50%;
+    background-position: center;
+}
+20%{
+    background-image: url(h3.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+40%{
+    background-image: url(h4.jpg);
+    background-size: 50%;
+    background-position: center;
+}
+20%{
+    background-image: url(h5.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+40%{
+    background-image: url(h9.jpg);
+    background-size: 50%;
+    background-position: center;
+}
+
+20%{
+    background-image: url(h10.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+40%{
+    background-image: url(h11.jpg);
+    background-size: 50%;
+    background-position: center;
+}
+20%{
+    background-image: url(h12.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+40%{
+    background-image: url(h13.jpg);
+    background-size: 50%;
+    background-position: center;
+}
+
+
+}
+
+
+ footer{
+    background-color: rgb(34, 99, 9);
+    grid-area: pie;
+    border-radius:33px;
+    
+ }
+ 
+
+ body{
+    
+    display: grid;
+    grid-template-rows: 110px 600px 600px 750px 750px 800px 150px;
+    grid-template-columns:  40% 60% ;
+    grid-template-areas:
+    "nav nav"
+    "s1 s2 "
+    "s3 s4"
+    "s5 s6"
+    "s5 s7"
+    "s8 s8"
+    "pie pie";
+    
+    gap:5px;
+}
+video{
+    grid-area: s1;
+    bottom:-30px;
+}
+    </style>
+</head>
+<body>
+        <nav>
+        <?php
+        include ( "cabecera.principal.php");
+        ?>
+        </nav>
+    <section id="uno">
+    <video  width="500px" height="600px" autoplay Loop controls>
+    <source src="videoplayback.mp4" >
+    </video>
+    </section>
+    <section id="dos">
+        <div class="caja sombra-movil">
+         <center> <div id="text">
+    <center><h2>HISTORIA</h2></center>
+    <p>Es un emprendimiento que ofrece la oportunidad de formar
+        parte de un ecosistema circular y ambiental mediante el uso
+        de la tecnología, para todo público , ya sea al sector
+        empresarial e industrial, como al sector agro y ciudadano de
+        las diferentes comunidades y departamentos.
+        Buscando la sostenibilidad con: la comercialización de
+        abonos orgánicos , alimentos sembrados y sub-productos , la
+        gestión e implementación del servicio de recolección
+        diferenciado (Fracción orgánica) , alianzas estratégicas entre
+        el sector público y privado promoviendo el cuidado de la
+        salud pública y medio ambiente</p>
+      </div></center>
+    </section>
+</div>
+    <section id="tres">
+    <div class="caja sombra-movil">
+    <center> <div id="text">
+    <center>
+    <center><h1>MISION</h1></center>
+        <p>Fomentar y promover la educación que fortalezcan la
+            responsabilidad con el medio ambiente y la salud a cada
+            ser humano y al ecosistema empresarial, en la gestión
+            adecuada y aprovechamiento de los residuos orgánicos
+            mediante el compostaje y energías alternativas para así
+            llevar una agricultura autosustentable y responsable con
+            la salud de las personas y ecosistemas</p>
+            </div>
+</div>
+        </section>
+        <section id="cuatro">
+        <div class="caja sombra-movil">
+        <center> <div id="text">
+        
+        <center><h1>VISION</h1></center>
+        <p>Ser líderes en la promoción de la educación ambiental y
+            salud pública mediante la gestión adecuada de residuos
+            orgánicos, nacional e internacionalmente, inspirando a la
+            sociedad para actuar con responsabilidad y
+            sostenibilidad, logrando un impacto significativo en la
+            salud del planeta y calidad de vida de las personas con
+            una alimentación densa en nutrientes y suelos mas sanos.</p>
+            </div>
+</div>
+        </section>
+        
+        <section id="cinco">
+        <div class="container">
+                   <div class="fotos1"> <img   src="h1.jpg" alt="content1 " >
+                  </div>
+                  <div>
+                    <img  src="h2.jpg" alt="content2 " >
+                  </div>
+                  <div>
+                    <img  src="h3.png" alt="content3" >
+                  </div>
+                  <div></div>
+                    <img width="100px" height="100px" src="h4.jpg" alt="content4 " >
+                  </div>
+                    <img width="100px" height="100px" src="h5.jpg" alt="content1 " >
+                    <img width="200px" height="200px" src="h9.jpg" alt="content1 " >
+                    <img width="100px" height="100px" src="h10.jpg" alt="content2 " >
+                    <img width="100px" height="100px" src="h12.jpg" alt="content4 " >
+                    <img width="100px" height="100px" src="h13.jpg" alt="content1 " >
+                    </div>
+                    
+                           </div>
+        </section>
+        <section id="seis">
+        <div class="caja sombra-movil">
+        <center> <div id="text1">
+
+            <center><h1>OBJETIVOS</h1></center>
+            <p>Aumentar y aplicar el uso de abonos orgánicos
+                Impulsar una agricultura y alimentacion sana y responsable con todos.
+                Capacitar y lograr educar niños, jovenes y adultos sobre la correcta separacion y gestion de R.O.
+                Motivar el desarrollo de lideres ambientales y
+                embajadores que se responsabilicen en su
+                comunidad, barrio e institución académica.</p>
+</div>
+</div>
+            </section>
+        <section id="siete">
+                
+                </section>
+                <section id="ocho">
+                <center> <h1>FUNDADORES</h1></center>
+                <div class="caja1">
+                <article class="ff1" >
+                <h1>SEBASTIAN CANEDO</h1>
+                    <ul>
+                         <li>CEO Y FUNDADOR</li>
+                             <li>Huk Kallpalla</li>
+                             </ul>
+                 <img width="150px" height="150px" src="foto1.jpg" id="f1"></img> 
+                </article>
+                </div>   
+           
+                <div class="caja2">
+                <article class="ff2">
+                <h1>ANGEL PEÑARANDA </h1>
+                    <ul>
+                         <li>CFO Y COFUNDADOR</li>
+                             <li>Huk Kallpalla</li>
+                             </ul>
+                    <img width="150px" height="150px" src="foto2.jpg" id="f2"></img>
+                </div>
+
+                <div class="caja3">
+                <article class="ff3">
+                <h1>BENAJAMIN LJONES</h1>
+                    <ul>
+                         <li>COO Y COFUNDADOR</li>
+                             <li>Huk Kallpalla</li>
+                             </ul><img width="150px" height="150px" src="foto3.jpg" id="f3"></img></div>
+                <div class="caja4">
+                <article class="ff4" >
+                <h1>ALBERT HAISAMANI </h1>
+                    <ul>
+                         <li>CIO Y COFUNDADOR</li>
+                             <li>Huk Kallpalla</li>
+                             </ul><img  width="150px" height="150px" src="foto4.jpg" id="f4"></img></div>
+                
+                </section>
+                <footer>
+                <?php
+        include("footer.php");
+        ?>
+                </footer>
+
+</body>
+</html>
