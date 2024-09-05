@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#h5 img{
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    animation-name: zzz;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    width: 50cm;
+    height: 50cm;
+}
+@keyframes zzz{
+20%{
+    background-image: url(h9.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+40%{
+    background-image: url(h10.jpg);
+    background-size: 50%;
+    background-position: center;
+}
+
+
+}
+    </style>
+</head>
+<body>
+<div class="h5"> <img  width="150px" height="150px" src="h5.jpg" ></img></div>
+<div class="h9"> <img  width="150px" height="150px" src="h9.jpg" ></img></div>
+<div class="h10"> <img  width="150px" height="150px" src="h10.jpg" id="f4"></img></div>
+</body>
+</html>
